@@ -1,6 +1,7 @@
 import "./index.css";
-import { Composition } from "remotion";
+import { Composition, Still } from "remotion";
 import { MyComposition } from "./Composition";
+import { ExplainerThumbnail } from "./explainer/ExplainerThumbnail";
 import { RemotionExplainer } from "./explainer/RemotionExplainer";
 import { RemotionExplainerShort } from "./explainer/RemotionExplainerShort";
 
@@ -30,6 +31,12 @@ export const RemotionRoot: React.FC = () => {
         fps={30}
         width={1080}
         height={1920}
+      />
+      <Still
+        id="ExplainerThumbnail"
+        component={ExplainerThumbnail}
+        width={1280}
+        height={720}
       />
     </>
   );
